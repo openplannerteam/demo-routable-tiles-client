@@ -10,10 +10,16 @@
       var toLatLong = [51.04888, 3.72879];
       client.query(fromLatLong, toLatLong).then(result => {
         console.log(JSON.stringify(result));
+        //after the other
+        client.query(fromLatLong.map((coord) => {return coord+0.01; }), toLatLong).then(result => {
+            console.log(JSON.stringify(result));
+        });
       });
       client.query(fromLatLong, toLatLong).then(result => {
         console.log(JSON.stringify(result));
       });
+
+      
     </script>
   </body>
 </html>
