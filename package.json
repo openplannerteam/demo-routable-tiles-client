@@ -1,0 +1,31 @@
+{
+  "name": "demo-routable-tiles-client",
+  "version": "0.0.1",
+  "description": "Demo of a routable tiles client POC",
+  "main": "./lib/routable-tiles-client.js",
+  "scripts": {
+    "build": "webpack lib/routable-tiles-client.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/openplannerteam/demo-routable-tiles-client.git"
+  },
+  "keywords": [
+    "open",
+    "route",
+    "planning"
+  ],
+  "author": "Pieter Colpaert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openplannerteam/demo-routable-tiles-client/issues"
+  },
+  "homepage": "https://github.com/openplannerteam/demo-routable-tiles-client#readme",
+  "dependencies": {
+    "dijkstrajs": "^1.0.1",
+    "haversine": "^1.1.1",
+    "jsonld": "^1.5.0",
+    "tiles-in-bbox": "^1.0.2"
+  }
+}
